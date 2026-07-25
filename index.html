@@ -3,14 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riantsoa - Portfolio</title>
+    
+    <!-- ===== TITRE (SEO - le plus important) ===== -->
+    <title>Riantsoa - Portfolio | Communication & Multimédia</title>
+    
+    <!-- ===== META DESCRIPTION (apparaît dans Google) ===== -->
+    <meta name="description" content="Portfolio de Riantsoa, étudiante en Communication & Multimédia. Découvrez mes projets en design, UI/UX, branding et création visuelle.">
+    
+    <!-- ===== META KEYWORDS ===== -->
+    <meta name="keywords" content="portfolio, Riantsoa, communication, multimédia, design, UI, UX, branding, créative, étudiante, projets">
+    
+    <!-- ===== META AUTHOR ===== -->
+    <meta name="author" content="Riantsoa">
+    
+    <!-- ===== ROBOTS (indexation) ===== -->
+    <meta name="robots" content="index, follow">
+    
+    <!-- ===== OPEN GRAPH (pour les réseaux sociaux) ===== -->
+    <meta property="og:title" content="Riantsoa - Portfolio | Communication & Multimédia">
+    <meta property="og:description" content="Portfolio de Riantsoa, étudiante en Communication & Multimédia. Découvrez mes projets en design, UI/UX, branding et création visuelle.">
+    <meta property="og:url" content="https://Riantsoaoff.github.io/Portfolio-Riantsoa-Project/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://Riantsoaoff.github.io/Portfolio-Riantsoa-Project/ressources/images/1.jpg">
+    
+    <!-- ===== TWITTER CARD ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Riantsoa - Portfolio | Communication & Multimédia">
+    <meta name="twitter:description" content="Portfolio de Riantsoa, étudiante en Communication & Multimédia.">
+    
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- ===== CANONICAL URL ===== -->
+    <link rel="canonical" href="https://Riantsoaoff.github.io/Portfolio-Riantsoa-Project/">
+    
+    <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="./ressources/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- ===== CSS INTERNE (pour le h1) ===== -->
+    <style>
+        /* Style du h1 principal */
+        h1 {
+            color: #2c3e50;
+            font-family: 'Arial', sans-serif;
+            font-size: 3em;
+            text-align: center;
+            margin-top: 50px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Style pour la section titre */
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .section-title span {
+            color: #e94560;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- BULLES FLOTTANTES EN ARRIÈRE-PLAN -->
-    <div class="bg-bubbles-container">
+    <!-- ===== BULLES FLOTTANTES EN ARRIÈRE-PLAN ===== -->
+    <div class="bg-bubbles-container" aria-hidden="true">
         <div class="bubble bubble-1"></div>
         <div class="bubble bubble-2"></div>
         <div class="bubble bubble-3"></div>
@@ -19,9 +81,9 @@
         <div class="bubble bubble-6"></div>
     </div>
 
-    <!-- NAVBAR -->
-    <div class="navbar-container">
-        <nav class="navbar">
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar-container">
+        <nav class="navbar" aria-label="Navigation principale">
             <div class="nav-logo">Riantsoa.</div>
             <div class="nav-links">
                 <a href="#hero">Accueil</a>
@@ -29,87 +91,81 @@
                 <a href="#skills">Outils</a>
                 <a href="#projects">Projets</a>
             </div>
-            <button class="nav-btn" onclick="location.href='#contact'">Contact</button>
+            <button class="nav-btn" onclick="location.href='#contact'" aria-label="Me contacter">Contact</button>
         </nav>
-    </div>
+    </header>
 
-    <!-- HERO SECTION -->
-    <header id="hero" class="section header-section">
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="section header-section">
         <div class="header-text">
             <span class="badge">✨ Bienvenue dans mon univers</span>
             <h1 class="main-title">Créons ensemble des designs <span class="highlight">uniques</span></h1>
-            <p class="hero-desc">Étudiante en Communication & Multimédia, passionnée par les interfaces épurées, modernes et les univers graphiques doux.</p>
+            <p class="hero-desc">Étudiante en Communication &amp; Multimédia, passionnée par les interfaces épurées, modernes et les univers graphiques doux.</p>
             <div>
-                <a href="#contact" class="btn-main">Me contacter</a>
+                <a href="#contact" class="btn-main" aria-label="Me contacter">Me contacter</a>
             </div>
         </div>
         <div class="avatar-wrapper">
             <div class="avatar-card">
-                <!-- ICI METTRE MA PHOTO (HERO) -->
-                <!-- Remplacez le src par le chemin de votre photo -->
-                <!-- Exemple: src="ressources/images/ma-photo-hero.jpg" -->
-                <img src="./ressources/images/1.jpg" alt="Riantsoa Avatar" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                <img src="./ressources/images/1.jpg" alt="Riantsoa - Étudiante en Communication & Multimédia" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;" loading="lazy">
             </div>
         </div>
-    </header>
+    </section>
 
-    <!-- SECTION RÉSEAUX SOCIAUX -->
-    <section id="social" class="section social-section">
+    <!-- ===== SECTION RÉSEAUX SOCIAUX ===== -->
+    <section id="social" class="section social-section" aria-label="Réseaux sociaux">
         <div class="social-grid">
             <div class="social-item">
                 <div class="social-icon github">
-                    <i class="fab fa-github"></i>
+                    <i class="fab fa-github" aria-hidden="true"></i>
                 </div>
                 <div class="social-info">
                     <h4>GitHub</h4>
-                    <a href="#">Voir mon travail</a>
+                    <a href="https://github.com/Riantsoaoff" target="_blank" rel="noopener noreferrer">Voir mon travail</a>
                 </div>
             </div>
             <div class="social-item">
                 <div class="social-icon discord">
-                    <i class="fab fa-discord"></i>
+                    <i class="fab fa-discord" aria-hidden="true"></i>
                 </div>
                 <div class="social-info">
                     <h4>Discord</h4>
-                    <a href="#">Voir mon travail</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Voir mon travail</a>
                 </div>
             </div>
             <div class="social-item">
                 <div class="social-icon facebook">
-                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
                 </div>
                 <div class="social-info">
                     <h4>Facebook</h4>
-                    <a href="#">Voir mon travail</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Voir mon travail</a>
                 </div>
             </div>
             <div class="social-item">
                 <div class="social-icon linkedin">
-                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                 </div>
                 <div class="social-info">
                     <h4>LinkedIn</h4>
-                    <a href="#">Voir mon travail</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Voir mon travail</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION À PROPOS -->
-    <section id="about" class="section about-section">
+    <!-- ===== SECTION À PROPOS ===== -->
+    <section id="about" class="section about-section" aria-label="À propos de moi">
         <div class="about-avatar-container">
             <div class="about-avatar-shape">
-                <!-- ICI METTRE MA PHOTO (À PROPOS) -->
-                <!-- Remplacez le src par le chemin de votre photo -->
-                <!-- Exemple: src="ressources/images/ma-photo-about.jpg" -->
-                <img src="./ressources/images/2.png" alt="Riantsoa" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10rem;">
+                <img src="./ressources/images/2.png" alt="Riantsoa - Communication & Multimédia" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10rem;" loading="lazy">
             </div>
         </div>
 
         <div class="about-text">
             <h2 class="section-title">À propos <span>de moi</span></h2>
             <p class="about-desc">
-                Je suis Riantsoa, étudiante passionnée en Communication et Multimédia. Je crée des expériences visuelles qui racontent des histoires et captivent les utilisateurs.
+                Je suis <strong>Riantsoa</strong>, étudiante passionnée en <strong>Communication et Multimédia</strong>. Je crée des expériences visuelles qui racontent des histoires et captivent les utilisateurs.
             </p>
             <p class="about-desc">
                 Mon parcours m'a permis de développer une sensibilité unique pour l'esthétique et la communication visuelle. J'adore transformer des idées en designs qui allient beauté et fonctionnalité.
@@ -130,46 +186,46 @@
                 </div>
             </div>
 
-            <button class="btn-hire" onclick="location.href='#contact'">
+            <button class="btn-hire" onclick="location.href='#contact'" aria-label="Me contacter">
                 📩 Me contacter
             </button>
         </div>
     </section>
 
-    <!-- SECTION OUTILS -->
-    <section id="skills" class="section">
+    <!-- ===== SECTION OUTILS ===== -->
+    <section id="skills" class="section" aria-label="Mes outils préférés">
         <h2 class="section-title text-center">MES <span>OUTILS PRÉFÉRÉS</span></h2>
         
         <div class="skills-grid">
             <div class="skill-card">
                 <div class="skill-icon-box bg-pink-light">
-                    <img src="ressources/images/Figma_Symbol_1.png" alt="Figma">
+                    <img src="ressources/images/Figma_Symbol_1.png" alt="Figma - Design UI/UX" loading="lazy">
                 </div>
                 <h3>FIGMA</h3>
             </div>
             <div class="skill-card">
                 <div class="skill-icon-box bg-purple-light">
-                    <img src="ressources/images/adobe-photoshop.png" alt="Photoshop">
+                    <img src="ressources/images/adobe-photoshop.png" alt="Adobe Photoshop - Retouche et création" loading="lazy">
                 </div>
                 <h3>PHOTOSHOP</h3>
             </div>
             <div class="skill-card">
                 <div class="skill-icon-box bg-orange-light">
-                    <img src="ressources/images/adobe-illustrator-seeklogo.png" alt="Illustrator">
+                    <img src="ressources/images/adobe-illustrator-seeklogo.png" alt="Adobe Illustrator - Design vectoriel" loading="lazy">
                 </div>
                 <h3>ILLUSTRATOR</h3>
             </div>
             <div class="skill-card">
                 <div class="skill-icon-box bg-yellow-light">
-                    <img src="ressources/images/adobe-xd-icon.png" alt="Adobe XD">
+                    <img src="ressources/images/adobe-xd-icon.png" alt="Adobe XD - Prototypage" loading="lazy">
                 </div>
                 <h3>ADOBE XD</h3>
             </div>
         </div>
     </section>
 
-    <!-- SECTION PROJETS -->
-    <section id="projects" class="section projects-section">
+    <!-- ===== SECTION PROJETS ===== -->
+    <section id="projects" class="section projects-section" aria-label="Mes projets">
         <div class="projects-container">
             <div class="projects-header">
                 <h2 class="projects-title">MES PROJETS</h2>
@@ -177,73 +233,73 @@
 
             <div class="projects-grid">
                 <div class="projects-col projects-col-left">
-                    <div class="project-item project-large">
+                    <article class="project-item project-large">
                         <div class="project-image">
-                            <div class="project-placeholder">🎨</div>
+                            <div class="project-placeholder" aria-hidden="true">🎨</div>
                         </div>
                         <div class="project-info">
                             <h3 class="project-name">Refonte Identité Visuelle</h3>
-                            <p class="project-category">Branding & UI Design (2025)</p>
-                            <a href="#" class="project-details">Voir le projet →</a>
+                            <p class="project-category">Branding &amp; UI Design (2025)</p>
+                            <a href="#" class="project-details" aria-label="Voir le projet Refonte Identité Visuelle">Voir le projet →</a>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-item project-large">
+                    <article class="project-item project-large">
                         <div class="project-image">
-                            <div class="project-placeholder">📊</div>
+                            <div class="project-placeholder" aria-hidden="true">📊</div>
                         </div>
                         <div class="project-info">
                             <h3 class="project-name">Dashboard Éco-Responsable</h3>
                             <p class="project-category">Dashboard UI Design (2025)</p>
-                            <a href="#" class="project-details">Voir le projet →</a>
+                            <a href="#" class="project-details" aria-label="Voir le projet Dashboard Éco-Responsable">Voir le projet →</a>
                         </div>
-                    </div>
+                    </article>
                 </div>
 
                 <div class="projects-col projects-col-right">
-                    <div class="project-item project-small">
+                    <article class="project-item project-small">
                         <div class="project-image">
-                            <div class="project-placeholder">📱</div>
+                            <div class="project-placeholder" aria-hidden="true">📱</div>
                         </div>
                         <div class="project-info">
                             <h3 class="project-name">Application Mobile Zen</h3>
                             <p class="project-category">App UI Design (2025)</p>
-                            <a href="#" class="project-details">Voir le projet →</a>
+                            <a href="#" class="project-details" aria-label="Voir le projet Application Mobile Zen">Voir le projet →</a>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-item project-small">
+                    <article class="project-item project-small">
                         <div class="project-image">
-                            <div class="project-placeholder">✨</div>
+                            <div class="project-placeholder" aria-hidden="true">✨</div>
                         </div>
                         <div class="project-info">
                             <h3 class="project-name">Site Portfolio Créatif</h3>
                             <p class="project-category">Web Design (2025)</p>
-                            <a href="#" class="project-details">Voir le projet →</a>
+                            <a href="#" class="project-details" aria-label="Voir le projet Site Portfolio Créatif">Voir le projet →</a>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-item project-extra-long">
+                    <article class="project-item project-extra-long">
                         <div class="project-image">
-                            <div class="project-placeholder">🚀</div>
+                            <div class="project-placeholder" aria-hidden="true">🚀</div>
                         </div>
                         <div class="project-info">
                             <h3 class="project-name">Plateforme Éducative</h3>
                             <p class="project-category">UI/UX Design (2025)</p>
-                            <a href="#" class="project-details">Voir le projet →</a>
+                            <a href="#" class="project-details" aria-label="Voir le projet Plateforme Éducative">Voir le projet →</a>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
 
             <div class="projects-footer">
-                <a href="#" class="btn-see-all">Voir tous les projets</a>
+                <a href="#" class="btn-see-all" aria-label="Voir tous les projets">Voir tous les projets</a>
             </div>
         </div>
     </section>
 
-    <!-- SECTION CONTACT -->
-    <section id="contact" class="contact-section">
+    <!-- ===== SECTION CONTACT ===== -->
+    <section id="contact" class="contact-section" aria-label="Me contacter">
         <div class="contact-banner">
             <div class="contact-text-side">
                 <h2 class="section-title">CONTACT</h2>
@@ -251,22 +307,24 @@
                     Envie de collaborer sur un projet ou simplement de discuter design ? J'adorerais échanger avec vous !
                 </p>
                 <div class="pt-4">
-                    <a href="mailto:riantsoaravoninahitriniarivo@gmail.com" class="btn-main">Contactez-moi maintenant</a>
+                    <a href="mailto:riantsoaravoninahitriniarivo@gmail.com" class="btn-main" aria-label="Envoyer un email à Riantsoa">Contactez-moi maintenant</a>
                 </div>
             </div>
             
             <div class="contact-img-side">
                 <img src="ressources/images/Going_through_a_split__A_breakup_app_might_be_just_what_you_need-removebg-preview.png" 
-                     alt="Illustration Application Téléphone" class="phone-img">
+                     alt="Illustration - Application mobile et communication" 
+                     loading="lazy">
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="section main-footer">
+    <!-- ===== FOOTER ===== -->
+    <footer class="section main-footer" role="contentinfo">
         <div>
             <div class="footer-logo">Riantsoa.</div>
             <p>Conçu avec douceur et modernité.</p>
+            <p>&copy; 2026 Riantsoa - Tous droits réservés</p>
         </div>
         <div>
             <h4>Navigation</h4>
@@ -279,12 +337,13 @@
         <div>
             <h4>Réseaux</h4>
             <div class="footer-links">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Dribbble</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/Riantsoaoff" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Dribbble</a>
             </div>
         </div>
     </footer>
-<script src="./ressources/js/script.js"></script>
+
+    <script src="./ressources/js/script.js" defer></script>
 </body>
 </html>
